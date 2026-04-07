@@ -1,0 +1,93 @@
+name: CI/CD Laravel Docker Deploy
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  # 1. CI - TEST
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Lấy code
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Setup PHP
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+
+    # Cài dependencies
+    - name: Install dependencies
+      run: composer install --no-interaction --prefer-dist
+
+    # Tạo .env + APP_KEY
+    - name: Setup environment
+      run: |
+        cp .env.example .env
+        php artisan key:generate
+
+    # Run test 
+    - name: Run test
+      run: php artisan test
+
+
+  # 2. CD - BUILD & DEPLOY
+
+  deploy:
+    needs: test  
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checkout lại code
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Build Docker image
+    - name: Build Docker image
+      run: docker build -t ${{ secrets.DOCKER_USERNAME }}/webcoffenhom6 .
+
+    # Login Docker Hub
+    - name: Login Docker Hub
+      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+
+    # Push image
+    - name: Push Docker image
+      run: docker push ${{ secrets.DOCKER_USERNAME }}/webcoffenhom6
+
+    # Deploy lên EC2
+    - name: Deploy to EC2
+      uses: appleboy/ssh-action@v0.1.6
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ubuntu
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          # Pull image mới
+          sudo docker pull ${{ secrets.DOCKER_USERNAME }}/webcoffenhom6
+
+          # Stop & remove container cũ
+          sudo docker stop coffee || true
+          sudo docker rm coffee || true
+
+          # Run container mới
+          sudo docker run -d -p 80:8000 --restart always --name coffee \
+            ${{ secrets.DOCKER_USERNAME }}/webcoffenhom6
+
+          # Fix Laravel 
+          sudo docker exec coffee cp .env.example .env
+          sudo docker exec coffee php artisan key:generate
+          
+          # fixt lỗi database
+          sudo docker exec coffee mkdir -p database
+          sudo docker exec coffee touch database/database.sqlite
+          sudo docker exec coffee php artisan migrate --force
+
+          sudo docker exec coffee php artisan config:clear
+          sudo docker exec coffee php artisan cache:clear
+
+          # Debug
+          sudo docker ps

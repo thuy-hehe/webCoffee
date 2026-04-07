@@ -1,0 +1,447 @@
+/* ===== ABOUT PAGE ===== */
+.about {
+    position: relative;
+}
+.about-content {
+    width: calc(100% - 420px);
+    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 155px;
+}
+.about-conten1 {
+    padding-left: 134px;
+    padding-right: 60px;
+}
+.about-conten1-title {
+    font-size: 1.5rem;
+    color: var(--gold-color);
+    display: block;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+.about-conten1-name {
+    font-family: "Playfair Display", serif;
+    font-size: 3.2rem;
+    line-height: 1.3;
+    font-weight: 700;
+    display: block;
+    text-transform: uppercase;
+    padding: 0 0 20px 0;
+    color: var(--coffe-Color);
+    margin-bottom: 6px;
+}
+.about-conten1-decripsicon {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 2;
+    text-align: left;
+    padding-bottom: 36px;
+    color: #555;
+    max-width: 680px;
+}
+.about-conten1-trangchu {
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--coffe-Color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    background: linear-gradient(90deg, var(--gold-color), var(--gold-light));
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: 0 4px 16px rgba(219, 182, 103, 0.4);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+.about-conten1-trangchu:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(219, 182, 103, 0.55);
+}
+.about-conten2 {
+    padding-left: 134px;
+    padding-right: 40px;
+    padding-top: 50px;
+    display: flex;
+}
+.about-conten2-list {
+    padding-right: 50px;
+}
+.about-conten2-name1 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.about-conten2-name2 {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--coffe-Color);
+    padding: 20px 0;
+}
+.about-conten2-name3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.about-conten-img {
+    width: 420px;
+    height: 79vh;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    object-fit: cover;
+    box-shadow: -8px 0 32px rgba(90, 40, 14, 0.15);
+}
+.about-info {
+    position: relative;
+    height: 100vh;
+}
+.about-info-img {
+    width: 738px;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.about-info-content {
+    width: calc(100% - 738px);
+    float: right;
+    padding: 50px 30px 10px 30px;
+}
+.about-info-content-title {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--gold-color);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.about-info-content-name {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+    color: var(--coffe-Color);
+    padding: 20px 0 15px 0;
+}
+.about-info-content-decripsion {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.6rem;
+    color: #555;
+}
+.about-info-content-list {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 14px 0 0 20px;
+}
+.about-info-content-item {
+    padding: 10px 0;
+    color: #444;
+}
+.about-info-content-item::marker {
+    color: var(--coffe-Color);
+}
+
+/* ===== MENU ===== */
+.menu-title {
+    margin-top: 60px;
+}
+.productviewitem-link {
+    text-decoration: none;
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    transition:
+        top 0.25s ease,
+        box-shadow 0.25s ease;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.productviewitem-link:hover {
+    top: -6px;
+    box-shadow: 0 16px 40px rgba(90, 40, 14, 0.22);
+}
+.category-name {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    color: var(--coffe-Color);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    width: 600px;
+    height: 44px;
+    background: linear-gradient(90deg, var(--gold-color), var(--gold-light));
+    border-radius: 100px;
+    margin: 40px auto 10px;
+    letter-spacing: 0.06em;
+    box-shadow: 0 4px 16px rgba(219, 182, 103, 0.3);
+}
+
+/* ===== BEAN STORY ===== */
+.bean-story {
+    background: linear-gradient(160deg, #b36e2e 0%, #e5ca8f 60%, #c8894a 100%);
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 40px;
+}
+.bean-story-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: var(--coffe-Color);
+    text-align: center;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+.bean-story-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--coffe-Color);
+    margin: 12px auto 0;
+    border-radius: 3px;
+}
+.bean-story-conten {
+    display: flex;
+    padding: 10px 50px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    margin: 20px 40px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 18px rgba(90, 40, 14, 0.08);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s;
+}
+.bean-story-conten:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(90, 40, 14, 0.16);
+}
+.bean-story-name {
+    font-family: "Playfair Display", serif;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: var(--coffe-Color);
+}
+.bean-story-origin {
+    display: block;
+    font-size: 1.4rem;
+    padding: 8px 0;
+    color: #666;
+}
+.bean-story-decription {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+.bean-story-info {
+    display: block;
+    padding-left: 20px;
+}
+.bean-story-img {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* ===== CONTACT ===== */
+.contact {
+    background: linear-gradient(160deg, #b36e2e 0%, #e5ca8f 60%, #c8894a 100%);
+    display: block;
+    padding-top: 4px;
+    padding-bottom: 40px;
+}
+.contact-title {
+    font-family: "Playfair Display", serif;
+    font-size: 2.8rem;
+    color: var(--coffe-Color);
+    text-align: center;
+    display: block;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+.contact-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--coffe-Color);
+    margin: 12px auto 0;
+    border-radius: 3px;
+}
+.contact-content {
+    width: 100%;
+    display: flex;
+    margin: 60px 0;
+    justify-content: space-around;
+}
+.contact-info {
+    font-size: 1.4rem;
+    line-height: 2.8rem;
+}
+.contact-info i[class*="fa-"] {
+    width: 30px;
+    display: inline-block;
+    color: var(--coffe-Color);
+}
+.contact-form {
+    display: inline-block;
+}
+.contact-form-btn {
+    margin-top: 16px !important;
+    font-size: 1.5rem;
+    color: var(--while-color);
+    background: var(--coffe-Color);
+    border: none;
+    padding: 10px 28px;
+    cursor: pointer;
+    float: right;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    transition:
+        background 0.2s,
+        transform 0.2s;
+}
+.contact-form-btn:hover {
+    background: var(--coffe-light);
+    transform: translateY(-2px);
+}
+.contact-form-row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.contact-form-row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.contact-form-cols {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.contact-form-cols2 {
+    width: 50%;
+}
+.contact-form-input {
+    padding: 11px 14px;
+    border: 1.5px solid #ccc;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 1.4rem;
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s;
+    font-family: "Lato", sans-serif;
+}
+.contact-form-input:focus {
+    outline: none;
+    border-color: var(--coffe-Color);
+    box-shadow: 0 0 0 3px rgba(90, 40, 14, 0.1);
+}
+.contact-form-mt8 {
+    padding-top: 8px !important;
+}
+.contact-form-colsfull {
+    width: 100%;
+}
+
+/* ===== PRODUCT DETAIL ===== */
+.productDetail-title {
+    padding-top: 10px;
+}
+.productDetail {
+    display: flex;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+}
+.productDetail-img {
+    border-radius: 10px;
+    box-shadow: 12px 12px 32px rgba(90, 40, 14, 0.22);
+    transition: transform 0.3s;
+}
+.productDetail-img:hover {
+    transform: scale(1.02);
+}
+.productDetail-content {
+    padding-left: 50px;
+}
+.productDetail-name {
+    display: block;
+    font-family: "Playfair Display", serif;
+    font-size: 2.6rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+    color: var(--coffe-Color);
+}
+.productDetail-decripsion {
+    font-size: 1.6rem;
+    display: block;
+    padding: 10px 0;
+    color: #555;
+    line-height: 2.4rem;
+}
+.productDetail-price {
+    display: flex;
+    margin: 20px 0;
+}
+.productDetail-pri {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #c0392b;
+    margin-right: 20px;
+}
+.productDetail-button {
+    padding-top: 24px;
+}
+.productDetail-button-back {
+    display: inline-flex;
+    width: 120px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg, var(--gold-color), var(--gold-light));
+    text-decoration: none;
+    color: var(--coffe-Color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    border-radius: 4px;
+    margin-right: 20px;
+    letter-spacing: 0.05em;
+    box-shadow: 0 4px 12px rgba(219, 182, 103, 0.35);
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+.productDetail-button-back:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(219, 182, 103, 0.5);
+}
+.productDetail-star {
+    color: #f0a500;
+}
+.productDetail-star1 {
+    color: #e5e5e5;
+}
+.productDetail-love {
+    color: #ff424f;
+    font-size: 2rem;
+}
