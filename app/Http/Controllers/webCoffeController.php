@@ -160,7 +160,7 @@ class webCoffeController extends Controller
                 'description' => 'Brownie socola đậm vị, phủ vụn hạt giòn tan như vệt sao băng lướt qua bầu trời.',
                 'image' => 'image/brownie.jpg'],
 
-                ['id' => 12, 'name' => 'Dải Ngân Hà Mousse', 'price' => '68 000 đ',
+                ['id' => 12, 'name' => 'Dải Ngân Hà Mousses', 'price' => '68 000 đ',
                 'description' => 'Bánh mousse mịn màng với lớp gương phủ lấp lánh như dải ngân hà rực rỡ.',
                 'image' => 'image/mousse.jpg']
 
