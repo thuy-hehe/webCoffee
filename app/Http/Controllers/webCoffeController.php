@@ -70,25 +70,25 @@ class webCoffeController extends Controller
 
             ],
 
-            'Đáng thử' => [
-                ['id' => 13, 'name' => 'Thiên Thạch Cheesecake', 'price' => '65.000 đ',
-                'description' => 'Bánh cheesecake mềm mịn, vị béo ngậy như mảnh thiên thạch ngọt ngào rơi giữa vũ trụ.',
-                'image' => 'image/cheesecake.jpg'],
+            // 'Đáng thử' => [
+            //     ['id' => 13, 'name' => 'Thiên Thạch Cheesecake', 'price' => '65.000 đ',
+            //     'description' => 'Bánh cheesecake mềm mịn, vị béo ngậy như mảnh thiên thạch ngọt ngào rơi giữa vũ trụ.',
+            //     'image' => 'image/cheesecake.jpg'],
 
-                ['id' => 14, 'name' => 'Vũ Trụ Cold Brew', 'price' => '60.000 đ',
-                'description' => 'Cold brew ủ lạnh 24 giờ, mang hương vị của cả vũ
-                trụ.', 'image' => 'image/coldbrew.jpg'],
+            //     ['id' => 14, 'name' => 'Vũ Trụ Cold Brew', 'price' => '60.000 đ',
+            //     'description' => 'Cold brew ủ lạnh 24 giờ, mang hương vị của cả vũ
+            //     trụ.', 'image' => 'image/coldbrew.jpg'],
 
-                ['id' => 15, 'name' => 'Trà Đào Mặt Trăng', 'price' => '55.000 đ',
-                'description' => 'Trà đào thơm ngọt, mang vị trái cây tự nhiên và cảm giác dịu dàng như ánh trăng.',
-                'image' => 'image/tradao.jpg'],
+            //     ['id' => 15, 'name' => 'Trà Đào Mặt Trăng', 'price' => '55.000 đ',
+            //     'description' => 'Trà đào thơm ngọt, mang vị trái cây tự nhiên và cảm giác dịu dàng như ánh trăng.',
+            //     'image' => 'image/tradao.jpg'],
 
 
-                ['id' => 16, 'name' => 'Dải Ngân Hà Mousse', 'price' => '68 000 đ',
-                'description' => 'Bánh mousse mịn màng với lớp gương phủ lấp lánh như dải ngân hà rực rỡ.',
-                'image' => 'image/mousse.jpg']
+            //     ['id' => 16, 'name' => 'Dải Ngân Hà Mousse', 'price' => '68 000 đ',
+            //     'description' => 'Bánh mousse mịn màng với lớp gương phủ lấp lánh như dải ngân hà rực rỡ.',
+            //     'image' => 'image/mousse.jpg']
 
-            ],
+            // ],
 
 
         ];
@@ -166,25 +166,25 @@ class webCoffeController extends Controller
 
             ],
 
-            'Đáng thử' => [
-                ['id' => 13, 'name' => 'Thiên Thạch Cheesecake', 'price' => '65.000 đ',
-                'description' => 'Bánh cheesecake mềm mịn, vị béo ngậy như mảnh thiên thạch ngọt ngào rơi giữa vũ trụ.',
-                'image' => 'image/cheesecake.jpg'],
+            // 'Đáng thử' => [
+            //     ['id' => 13, 'name' => 'Thiên Thạch Cheesecake', 'price' => '65.000 đ',
+            //     'description' => 'Bánh cheesecake mềm mịn, vị béo ngậy như mảnh thiên thạch ngọt ngào rơi giữa vũ trụ.',
+            //     'image' => 'image/cheesecake.jpg'],
 
-                ['id' => 14, 'name' => 'Vũ Trụ Cold Brew', 'price' => '60.000 đ',
-                'description' => 'Cold brew ủ lạnh 24 giờ, mang hương vị của cả vũ
-                trụ.', 'image' => 'image/coldbrew.jpg'],
+            //     ['id' => 14, 'name' => 'Vũ Trụ Cold Brew', 'price' => '60.000 đ',
+            //     'description' => 'Cold brew ủ lạnh 24 giờ, mang hương vị của cả vũ
+            //     trụ.', 'image' => 'image/coldbrew.jpg'],
 
-                ['id' => 15, 'name' => 'Trà Đào Mặt Trăng', 'price' => '55.000 đ',
-                'description' => 'Trà đào thơm ngọt, mang vị trái cây tự nhiên và cảm giác dịu dàng như ánh trăng.',
-                'image' => 'image/tradao.jpg'],
+            //     ['id' => 15, 'name' => 'Trà Đào Mặt Trăng', 'price' => '55.000 đ',
+            //     'description' => 'Trà đào thơm ngọt, mang vị trái cây tự nhiên và cảm giác dịu dàng như ánh trăng.',
+            //     'image' => 'image/tradao.jpg'],
 
 
-                ['id' => 16, 'name' => 'Dải Ngân Hà Mousse', 'price' => '68 000 đ',
-                'description' => 'Bánh mousse mịn màng với lớp gương phủ lấp lánh như dải ngân hà rực rỡ.',
-                'image' => 'image/mousse.jpg']
+            //     ['id' => 16, 'name' => 'Dải Ngân Hà Mousse', 'price' => '68 000 đ',
+            //     'description' => 'Bánh mousse mịn màng với lớp gương phủ lấp lánh như dải ngân hà rực rỡ.',
+            //     'image' => 'image/mousse.jpg']
 
-            ],
+            // ],
 
         ];
 
